@@ -8,18 +8,24 @@
 </head>
 <body>
 
+<!-- NAVBAR -->
 <nav class="navbar">
-  <div class="logo">GlowSkin</div>
+  <div class="logo">
+    <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png">
+    <span>GlowSkin</span>
+  </div>
+
   <ul class="nav-links">
     <li><a href="#">Home</a></li>
     <li><a href="#produk">Produk</a></li>
     <li><a href="#testimoni">Testimoni</a></li>
   </ul>
+
   <a href="#" class="btn">Shop Now</a>
 </nav>
 
 <!-- HERO -->
-<section class="hero fade">
+<section class="hero">
   <div class="hero-content">
     <h1>Luxury Skincare for Glowing Skin</h1>
     <p>Perawatan kulit premium dengan bahan lembut & aman</p>
@@ -28,39 +34,42 @@
 </section>
 
 <!-- PRODUK -->
-<section id="produk" class="fade">
+<section id="produk">
   <h2>Our Products</h2>
   <div class="grid">
 
     <div class="card">
-      <img src="image/foto1.jpg">
+      <img src="https://images.unsplash.com/photo-1611930022073-b7a4ba5fcccd">
       <h3>Glow Serum</h3>
       <p>Mencerahkan & melembabkan kulit</p>
+      <p class="price">Rp79.000</p>
     </div>
 
     <div class="card">
-      <img src="image/foto2.jpg">
+      <img src="https://images.unsplash.com/photo-1601049541289-9b1b7bbbfe19">
       <h3>Hydra Moist</h3>
       <p>Menjaga kelembapan sepanjang hari</p>
+      <p class="price">Rp99.000</p>
     </div>
 
     <div class="card">
-      <img src="image/foto3.jpg">
+      <img src="https://images.unsplash.com/photo-1620912189860-3a1e9c9d8b6b">
       <h3>Bright Toner</h3>
       <p>Menyegarkan & menyeimbangkan kulit</p>
+      <p class="price">Rp69.000</p>
     </div>
 
   </div>
 </section>
 
 <!-- TESTIMONI -->
-<section id="testimoni" class="fade">
+<section id="testimoni">
   <h2>Testimonial</h2>
   <p class="testi">"Kulit terasa lebih halus dan glowing ✨"</p>
 </section>
 
 <!-- CTA -->
-<section class="cta fade">
+<section class="cta">
   <h2>Start Your Glow Journey 💖</h2>
   <a href="#" class="btn">Order Now</a>
 </section>
@@ -68,20 +77,6 @@
 <footer>
   <p>© 2026 GlowSkin Beauty</p>
 </footer>
-
-<!-- SCRIPT ANIMASI -->
-<script>
-const faders = document.querySelectorAll('.fade');
-
-window.addEventListener('scroll', () => {
-  faders.forEach(el => {
-    const top = el.getBoundingClientRect().top;
-    if(top < window.innerHeight - 100){
-      el.classList.add('show');
-    }
-  });
-});
-</script>
 
 </body>
 </html>

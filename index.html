@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GlowSkin Beauty</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="logo">GlowSkin</div>
+  <ul class="nav-links">
+    <li><a href="#">Home</a></li>
+    <li><a href="#produk">Produk</a></li>
+    <li><a href="#testimoni">Testimoni</a></li>
+  </ul>
+  <a href="#" class="btn">Shop Now</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero fade">
+  <div class="hero-content">
+    <h1>Luxury Skincare for Glowing Skin</h1>
+    <p>Perawatan kulit premium dengan bahan lembut & aman</p>
+    <a href="#produk" class="btn">Explore</a>
+  </div>
+</section>
+
+<!-- PRODUK -->
+<section id="produk" class="fade">
+  <h2>Our Products</h2>
+  <div class="grid">
+
+    <div class="card">
+      <img src="image/foto1.jpg">
+      <h3>Glow Serum</h3>
+      <p>Mencerahkan & melembabkan kulit</p>
+    </div>
+
+    <div class="card">
+      <img src="image/foto2.jpg">
+      <h3>Hydra Moist</h3>
+      <p>Menjaga kelembapan sepanjang hari</p>
+    </div>
+
+    <div class="card">
+      <img src="image/foto3.jpg">
+      <h3>Bright Toner</h3>
+      <p>Menyegarkan & menyeimbangkan kulit</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- TESTIMONI -->
+<section id="testimoni" class="fade">
+  <h2>Testimonial</h2>
+  <p class="testi">"Kulit terasa lebih halus dan glowing ✨"</p>
+</section>
+
+<!-- CTA -->
+<section class="cta fade">
+  <h2>Start Your Glow Journey 💖</h2>
+  <a href="#" class="btn">Order Now</a>
+</section>
+
+<footer>
+  <p>© 2026 GlowSkin Beauty</p>
+</footer>
+
+<!-- SCRIPT ANIMASI -->
+<script>
+const faders = document.querySelectorAll('.fade');
+
+window.addEventListener('scroll', () => {
+  faders.forEach(el => {
+    const top = el.getBoundingClientRect().top;
+    if(top < window.innerHeight - 100){
+      el.classList.add('show');
+    }
+  });
+});
+</script>
+
+</body>
+</html>
